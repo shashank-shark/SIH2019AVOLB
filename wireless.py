@@ -12,8 +12,17 @@ for interface in c.Win32_NetworkAdapterConfiguration (IPEnabled=1):
 
 s = speedtest.Speedtest(source_address=source)
 s.get_best_server()
-print(s.download())
-print(s.upload())
+downSpeed = s.download()
+upSpeed = s.upload()
+
+print(downSpeed)
+print(upSpeed)
+
+byteToMegabyteDownload = downSpeed / 1048576
+byteToMegabyteUpload = upSpeed / 1048576
+
+print ("download speed " , byteToMegabyteDownload)
+print ("upload speed ", byteToMegabyteUpload)
 
 
 # for interface in c.Win32_NetworkAdapterConfiguration (IPEnabled=1):
