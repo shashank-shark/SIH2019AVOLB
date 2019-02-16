@@ -21,8 +21,8 @@ print(upSpeed)
 byteToMegabyteDownload = downSpeed / 1048576
 byteToMegabyteUpload = upSpeed / 1048576
 
-print ("download speed " , byteToMegabyteDownload)
-print ("upload speed ", byteToMegabyteUpload)
+print ("download speed " , byteToMegabyteDownload, " Mbps")
+print ("upload speed ", byteToMegabyteUpload, " Mbps")
 
 
 # for interface in c.Win32_NetworkAdapterConfiguration (IPEnabled=1):
